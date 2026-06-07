@@ -1,77 +1,29 @@
-# ==================================================
-# MATLAB / Simulink generated folders
-# ==================================================
+# MATLAB autosave / temp
+*.asv
+*.m~
+*.autosave
+
+# Simulink cache and generated code
 slprj/
 *_ert_rtw/
 *_grt_rtw/
 *_slrealtime_rtw/
 *_rtw/
 tmwinternal/
-CACHE/
-CODEGEN/
-html/
-
-# ==================================================
-# Simulink cache / build artifacts
-# ==================================================
 *.slxc
-*.mldatx
-*.dwo
-*.hex
-*.out
+
+# Build artifacts
 *.obj
 *.o
 *.d
 *.map
 *.mk
-*.dmr
+*.bat
 
-buildInfo.mat
-codeInfo.mat
-compileInfo.mat
-codedescriptor.dmr
-rtwtypeschksum.mat
-rtw_proj.tmw
-simulink_cache.xml
-checksumOfCache.mat
-varInfo.mat
-minfo.mat
-binfo.mat
-BlockTraceInfo.mat
-CompileInfo.xml
-loggingdb.json
-taskinfo.mat
-peripheralInfo.mat
-profiling_info.mat
-instrumentationInfo.mat
-
-# ==================================================
-# CCS generated project/build folders
-# ==================================================
-CCS_Project/
-CCS_Workspace/
-
-# ==================================================
-# Installer packages / large archives
-# ==================================================
-*.zip
-*.7z
-*.rar
-*.tar
-*.gz
-*.iso
-
-# ==================================================
-# Autosaves / temp
-# ==================================================
-*.asv
-*.bak
-*.tmp
+# Logs
 *.log
 
-# ==================================================
-# OS/editor junk
-# ==================================================
+# OS/editor
 .DS_Store
 Thumbs.db
-desktop.ini
+.vscode/
