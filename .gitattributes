@@ -1,0 +1,2 @@
+*.slx binary merge=mlAutoMerge
+*.mdl binary merge=mlAutoMerge
