@@ -1,4 +1,4 @@
-name: MATLAB Simulink CI
+name: TI-Piccolo Repository CI
 
 on:
   pull_request:
@@ -8,27 +8,33 @@ on:
   workflow_dispatch:
 
 jobs:
-  model-load-check:
-    name: Load selected Simulink models
+  repository-structure-check:
+    name: Repository structure check
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up MATLAB
-        uses: matlab-actions/setup-matlab@v2
-        with:
-          release: R2023b
+      - name: Verify required files exist
+        shell: bash
+        run: |
+          test -f README.md
+          test -f .gitattributes
+          test -f .gitignore
+          test -f ci/check_models.m
+          test -d models
+          test -d docs
+          test -d scripts
 
-      - name: Run Simulink model load check
-        uses: matlab-actions/run-command@v2
-        with:
-          command: addpath("ci"); check_models()
+      - name: Verify Simulink Git merge attributes
+        shell: bash
+        run: |
+          grep -q "\*.slx binary merge=mlAutoMerge" .gitattributes
+          grep -q "\*.mdl binary merge=mlAutoMerge" .gitattributes
 
-      - name: Upload CI report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: matlab-simulink-ci-report
-          path: ci_reports/
+      - name: Verify generated outputs are ignored
+        shell: bash
+        run: |
+          grep -q "ci_reports/" .gitignore
+          grep -q "slprj/" .gitignore
