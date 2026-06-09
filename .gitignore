@@ -27,3 +27,5 @@ tmwinternal/
 .DS_Store
 Thumbs.db
 .vscode/
+
+ci_reports/
