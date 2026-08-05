@@ -33,7 +33,7 @@ try {
     git status --short
     $changes = git status --porcelain
     if ($changes) {
-        git commit -m "Publish TI Piccolo dyno public release v1.5"
+        git commit -m "Publish TI Piccolo dyno public release v1.6"
         git push origin main
     } else {
         Write-Host "No changes detected." -ForegroundColor Yellow
