@@ -1,4 +1,12 @@
-# Release Notes - v1.4
+# Release Notes - v1.5
+
+
+## Cover and presentation update
+
+- Rebuilt both report covers to match the established Herder engineering-report visual system.
+- Added the full red title field, black/gray metadata grid, document-purpose panel, and first-page report header.
+- Retained the technical body, Simulink models, custom ADC source, scripts, hardware references, and validation evidence without substantive removal.
+- Re-rendered and visually reviewed every report page before packaging.
 
 ## Final customer-facing release
 
