@@ -1,31 +1,24 @@
-# Release Notes - v1.5
+# Release Notes
 
+## v2.4 - 5 August 2026
 
-## Cover and presentation update
+- Replaced the prior FRD-plus-report arrangement with two actual Functional Requirements Documents built from the approved optical-motion FRD template structure.
+- Added a dedicated **Firmware, Host Software & Results FRD** covering embedded behavior, editable Simulink models, CAN, custom ADC integration, host acquisition, verification, and measured characterization.
+- Added a dedicated **Platform, Electrical & Interfaces FRD** covering controller/inverter architecture, power, motor phases, encoders, CAN physical wiring, deployment, schematics, BOM, safety, and ownership boundaries.
+- Confined efficiency maps and sample-density evidence to the Firmware/Host FRD.
+- Removed all efficiency results, analysis methodology, and software-implementation duplication from the Platform/Electrical FRD.
+- Preserved the editable Simulink models, custom `F28069M_ADC_Custom_Config.c`, MATLAB utilities, vendor schematic references, connector figures, and approved results.
+- Rendered and visually reviewed every page of both FRDs before packaging.
+- Regenerated release checksums and verified the ZIP structure.
 
-- Rebuilt both report covers to match the established Herder engineering-report visual system.
-- Added the full red title field, black/gray metadata grid, document-purpose panel, and first-page report header.
-- Retained the technical body, Simulink models, custom ADC source, scripts, hardware references, and validation evidence without substantive removal.
-- Re-rendered and visually reviewed every report page before packaging.
+## Public source retained
 
-## Final customer-facing release
-
-- Added the retained custom source `F28069M_ADC_Custom_Config.c`.
-- Documented the custom ADC SOC/channel, ePWM trigger, acquisition-window, and interrupt-routing implementation in both reports.
-- Distinguished handwritten/custom ADC integration from MathWorks-generated ADC support output.
-- Preserved all editable Simulink target, host, and reusable subsystem models from v1.3.
-- Reorganized MATLAB setup, logging, and analysis utilities under `host-software/`.
-- Replaced the misleading scripts-only `firmware/` folder with an explicit `embedded-control/` source boundary.
-- Updated README, NOTICE, report traceability, deployment tooling, checksums, and archive version consistently.
-
-## Included engineering source
-
-- Complete C2000 dual-motor CAN target model.
-- Speedgoat CAN host, efficiency-mapping host, and drive-cycle host models.
-- CAN receive, CAN transmit, and current-control subsystem models.
-- Custom F28069M ADC configuration source adding PWM-triggered simultaneous `SOC12/SOC13` and `SOC14/SOC15` input pairs.
-- Selected MATLAB setup, logging, export, plotting, and efficiency-processing utilities.
+- C2000 dual-motor target and CAN target models
+- Speedgoat CAN host, efficiency host, and drive-cycle host models
+- CAN receive/transmit and current-control subsystem models
+- Custom F28069M ADC configuration source
+- Selected MATLAB setup, logging, export, plotting, and processing utilities
 
 ## Intentionally excluded
 
-Generated C/C++ output, object files, binaries, caches, `slprj`, academic/internal records, private raw data, private tuning history, editable vendor PCB projects, Gerbers, pick-and-place data, and fabrication packages.
+Generated C/C++ output, binaries, caches, `slprj`, private raw data, internal tuning history, institution-specific records, editable vendor PCB projects, Gerbers, pick-and-place files, and fabrication packages.
