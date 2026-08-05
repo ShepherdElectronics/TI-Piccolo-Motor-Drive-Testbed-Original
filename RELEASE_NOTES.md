@@ -1,3 +1,14 @@
+# Release Notes
+- Efficiency figures, methods, and interpretation are now confined to the Embedded Control & Characterization Report; the FRD retains only evidence-traceability requirements.
+
+## v2.1 - 5 August 2026
+
+- Rebuilt both engineering reports from scratch using the approved red/black/gray cover template.
+- Reduced the FRD to requirements, interfaces, verification, traceability, constraints, and release status.
+- Rebuilt the companion report around Simulink architecture, custom ADC firmware, CAN, host software, and measured characterization.
+- Removed duplicated requirement tables, safety text, release-boundary prose, and repeated architecture narrative between reports.
+- Preserved all public source models, scripts, hardware references, firmware, and result figures.
+
 # Release Notes - v1.5
 
 
@@ -29,3 +40,20 @@
 ## Intentionally excluded
 
 Generated C/C++ output, object files, binaries, caches, `slprj`, academic/internal records, private raw data, private tuning history, editable vendor PCB projects, Gerbers, pick-and-place data, and fabrication packages.
+
+## v2.1 - FRD explanatory context restored
+
+- Rebuilt the FRD as a true functional requirements document with system purpose, operating concept, functional decomposition, requirement attributes, rationales, operating modes, verification strategy, assumptions, constraints, and acceptance logic.
+- Kept efficiency methods and plots exclusively in the Embedded Control & Characterization Report.
+- Restored all implementation-report figures as embedded, visible evidence and removed the nearly blank overflow page.
+- Updated both reports, repository links, checksums, and publication script to revision 2.0.
+
+## v2.1 - Report separation correction
+
+- Removed all efficiency maps, processing discussion, and efficiency interpretation from the FRD.
+- Reserved efficiency characterization exclusively for the Embedded Control & Characterization Report.
+- Re-rendered and visually inspected both reports after the correction.
+
+## v2.1 - 2026-08-05
+- Restyled both engineering documents using the approved Dual-Core Optical Motion Testbed FRD v5.0 visual framework: white serif cover, navy/red hierarchy, controlled-document header/footer, and revised tables.
+- Technical content and the FRD/characterization boundary were retained.
