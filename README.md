@@ -1,6 +1,6 @@
 # TI Piccolo-Based Dual-Motor Dynamometer Control Platform
 
-Public engineering release **v1.5**
+Public engineering release **v1.7**
 
 This repository contains the actual editable Simulink control models, custom low-level F28069M ADC firmware, selected MATLAB host tooling, hardware-interface evidence, and measured characterization outputs for a dual-PMSM dynamometer built around a TI C2000 Piccolo F28069M and two DRV8305 inverter stages.
 
@@ -22,8 +22,8 @@ The inherited platform contained usable controller and inverter hardware, but it
 
 ## Primary documents
 
-- [Functional Requirements & Validation Report](docs/Dual_Motor_Dynamometer_FRD_v1.5.pdf)
-- [Embedded Control, CAN & Characterization Report](docs/Embedded_Control_CAN_and_Characterization_Report_v1.5.pdf)
+- [Functional Requirements & Validation Report](docs/Dual_Motor_Dynamometer_FRD_v1.7.pdf)
+- [Embedded Control, CAN & Characterization Report](docs/Embedded_Control_and_Characterization_Report_v1.7.pdf)
 
 ## Repository map
 

@@ -1,3 +1,13 @@
+# Release Notes
+
+## v1.7 - 5 August 2026
+
+- Rebuilt both engineering reports from scratch using the approved red/black/gray cover template.
+- Reduced the FRD to requirements, interfaces, verification, traceability, constraints, and release status.
+- Rebuilt the companion report around Simulink architecture, custom ADC firmware, CAN, host software, and measured characterization.
+- Removed duplicated requirement tables, safety text, release-boundary prose, and repeated architecture narrative between reports.
+- Preserved all public source models, scripts, hardware references, firmware, and result figures.
+
 # Release Notes - v1.5
 
 
