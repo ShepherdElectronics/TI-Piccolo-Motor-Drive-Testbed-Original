@@ -4,8 +4,8 @@ This repository is a **documentation-only, black-box public release** describing
 
 ## Public contents
 
-- `docs/Dual_Motor_Dynamometer_Control_Software_FRD_v2.6.pdf` and `.docx`
-- `docs/Dual_Motor_Dynamometer_Platform_Interfaces_FRD_v2.6.pdf` and `.docx`
+- [Control & Software FRD (PDF)](docs/Dual_Motor_Dynamometer_Control_Software_FRD_v2.6.pdf) — [DOCX](docs/Dual_Motor_Dynamometer_Control_Software_FRD_v2.6.docx)
+- [Platform & Interfaces FRD (PDF)](docs/Dual_Motor_Dynamometer_Platform_Interfaces_FRD_v2.6.pdf) — [DOCX](docs/Dual_Motor_Dynamometer_Platform_Interfaces_FRD_v2.6.docx)
 - `NOTICE.md`
 - `RELEASE_NOTES.md`
 
