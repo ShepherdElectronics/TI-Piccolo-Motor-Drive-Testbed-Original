@@ -17,7 +17,7 @@ The engineering work covers the integration boundary between the physical dyno, 
 
 ## Customer-facing engineering report
 
-The [public FRD and technical case study](docs/Dual_Motor_Dynamometer_Platform_FRD_Public.pdf) provides the concise engineering overview, system boundary, architecture context, selected evidence, and qualification limits.
+The [public FRD PDF](docs/Dual_Motor_Dynamometer_Platform_FRD_Public.pdf) provides the concise engineering overview, system boundary, architecture context, selected evidence, and qualification limits. The [editable DOCX version](docs/Dual_Motor_Dynamometer_Platform_FRD_Public.docx) is provided for document review.
 
 For the broader project presentation, see the [online dyno case study](https://herdersystemen.com/projects/ti-piccolo-pmsm-dynamometer).
 
