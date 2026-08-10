@@ -1,5 +1,14 @@
-# Public release notice
+# NOTICE
 
-This repository contains a deliberately limited set of case-study result figures. No source code, editable models, hardware design package, setup procedure, calibration record, raw dataset, or private engineering documentation is included.
+This is a documentation-only public capability release.
 
-Product names and marks remain the property of their respective owners. This release is not sponsored, endorsed, certified, or supplied by any hardware, software, laboratory, or equipment vendor.
+The package intentionally excludes implementation intellectual property and reproducible engineering detail, including source code, editable models, firmware, algorithms, setup procedures, detailed communications definitions, raw datasets, calibration assets, wiring and connector mappings, schematics, BOMs, PCB/manufacturing sources, and internal development records.
+
+References to commercial hardware are descriptive only and do not transfer ownership of third-party designs or documentation. Physical test equipment ownership is separate from authorship of this public documentation.
+
+No production safety, regulatory, EMC, environmental, endurance, cybersecurity, or calibrated-metrology qualification is claimed.
+
+
+## Visual-material boundary
+
+Public hardware photographs may be redistributed with this release. Simulink screenshots that expose model topology, signal names, configuration dialogs, paths, or implementation details are intentionally excluded from the no-IP package.
