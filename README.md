@@ -1,27 +1,36 @@
 # TI Piccolo Dual-Motor PMSM Dynamometer
 
-Public case-study evidence for a dual-motor permanent-magnet synchronous-machine dynamometer built around TI C2000 control hardware.
+An integrated motor-control and test platform built around a TI C2000 Piccolo controller, two inverter stages, two coupled permanent-magnet synchronous machines, and a real-time measurement workflow.
 
-## What this release shows
+## What the platform is
 
-The project demonstrates work across motor-control integration, real-time test orchestration, measurement review, and efficiency characterization. The released figures provide representative evidence of the analysis output without exposing the underlying implementation, calibration, source, or station procedures.
+The dynamometer is a laboratory test system used to operate one motor as the drive machine and the second as a controlled load. The platform brings together:
 
-## Public boundary
+- TI C2000 LaunchPad control hardware
+- Two inverter stages and a shared DC supply
+- Encoder feedback and current/voltage measurement
+- CAN-connected supervisory control
+- Simulink and real-time test orchestration
+- Torque, speed, power, and efficiency characterization
 
-This repository is intentionally limited to selected result figures. Firmware, editable control models, host scripts, hardware interface records, schematics, bills of material, setup procedures, calibration values, raw data, and internal engineering documentation are not distributed here.
+The engineering work covers the integration boundary between the physical dyno, embedded control, host-side test execution, measurement, and technical evidence.
 
-The public case study is available at:
+## Customer-facing engineering report
 
-https://herdersystemen.com/projects/ti-piccolo-pmsm-dynamometer
+The [public FRD and technical case study](docs/Dual_Motor_Dynamometer_Platform_FRD_Public.pdf) provides the concise engineering overview, system boundary, architecture context, selected evidence, and qualification limits.
 
-This release does not provide a build path, deployment procedure, hardware bring-up sequence, or operating instructions. It is not a production-qualified, safety-certified, or turnkey motor-drive package.
+For the broader project presentation, see the [online dyno case study](https://herdersystemen.com/projects/ti-piccolo-pmsm-dynamometer).
 
-## Result figures
+## Selected evidence
 
-- `results/04_valid_efficiency_points.png` - screened efficiency points
-- `results/07_interpolated_efficiency_map.png` - interpolated efficiency map
-- `results/08_efficiency_contour.png` - contour presentation of the released map
+- [Screened efficiency points](results/04_valid_efficiency_points.png)
+- [Interpolated efficiency map](results/07_interpolated_efficiency_map.png)
+- [Efficiency contour](results/08_efficiency_contour.png)
 
-## Contact
+## Public release boundary
 
-Technical discussions and qualified information requests can be started through the public case-study page.
+This repository is a customer-facing evidence release. It is intended to make the platform and engineering scope easy to understand quickly; it is not a build or deployment package.
+
+Implementation source, editable control models, host scripts, hardware interface records, schematics, bills of material, setup procedures, calibration values, raw data, and internal engineering documentation are intentionally kept private.
+
+The released material does not claim production qualification, safety certification, vendor endorsement, or turnkey operation.
