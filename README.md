@@ -1,38 +1,23 @@
-# TI Piccolo Dual-Motor PMSM Dynamometer
+# Dual-Motor PMSM Dynamometer Platform - Public Capability Release v2.6
 
-An integrated motor-control and test platform built around a TI C2000 Piccolo controller, two inverter stages, two coupled permanent-magnet synchronous machines, and a real-time measurement workflow.
+This repository is a **documentation-only, black-box public release** describing the functional requirements, externally observable interfaces, verification approach, and demonstrated engineering scope of a dual-motor PMSM dynamometer platform.
 
-## What the platform is
+## Public contents
 
-The dynamometer is a laboratory test system used to operate one motor as the drive machine and the second as a controlled load. The platform brings together:
+- `docs/Dual_Motor_Dynamometer_Control_Software_FRD_v2.6.pdf` and `.docx`
+- `docs/Dual_Motor_Dynamometer_Platform_Interfaces_FRD_v2.6.pdf` and `.docx`
+- `NOTICE.md`
+- `RELEASE_NOTES.md`
 
-- TI C2000 LaunchPad control hardware
-- Two inverter stages and a shared DC supply
-- Encoder feedback and current/voltage measurement
-- CAN-connected supervisory control
-- Simulink and real-time test orchestration
-- Torque, speed, power, and efficiency characterization
+## Deliberately not published
 
-The engineering work covers the integration boundary between the physical dyno, embedded control, host-side test execution, measurement, and technical evidence.
+No source code, Simulink models, MATLAB scripts, firmware, generated code, raw datasets, setup or deployment instructions, pinouts, schematics, BOMs, board files, wiring diagrams, calibration data, tuning constants, detailed protocol definitions, manufacturing files, or internal development history are included.
 
-## Customer-facing engineering report
+The documents are intended to let customers review **what the platform does and how capability is verified** without providing the implementation information required to reproduce or modify the system.
 
-The [public FRD PDF](docs/Dual_Motor_Dynamometer_Platform_FRD_Public.pdf) provides the concise engineering overview, system boundary, architecture context, selected evidence, and qualification limits. The [editable DOCX version](docs/Dual_Motor_Dynamometer_Platform_FRD_Public.docx) is provided for document review.
+Prepared by Herder Elektronische Systemen.
 
-For the broader project presentation, see the [online dyno case study](https://herdersystemen.com/projects/ti-piccolo-pmsm-dynamometer).
 
-## Selected evidence
+## Public visual evidence
 
-- [Screened efficiency points](results/04_valid_efficiency_points.png)
-- [Interpolated efficiency map](results/07_interpolated_efficiency_map.png)
-- [Efficiency contour](results/08_efficiency_contour.png)
-
-## Public release boundary
-
-This repository is a customer-facing evidence release. It is intended to make the platform and engineering scope easy to understand quickly; it is not a build or deployment package.
-
-Implementation source, editable control models, host scripts, hardware interface records, schematics, bills of material, setup procedures, calibration values, raw data, and internal engineering documentation are intentionally kept private.
-
-Vendor reference schematics are included under [`hardware/`](hardware/) for board identification. They are not manufacturing files or a PCB design release.
-
-The released material does not claim production qualification, safety certification, vendor endorsement, or turnkey operation.
+Curated hardware photographs are included in `media/` and embedded in the platform FRD. Editable models, source code, readable Simulink implementation screenshots, wiring instructions, setup procedures, and reproducible implementation details remain excluded.
