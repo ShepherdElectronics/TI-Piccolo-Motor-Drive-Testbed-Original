@@ -33,4 +33,6 @@ This repository is a customer-facing evidence release. It is intended to make th
 
 Implementation source, editable control models, host scripts, hardware interface records, schematics, bills of material, setup procedures, calibration values, raw data, and internal engineering documentation are intentionally kept private.
 
+Vendor reference schematics are included under [`hardware/`](hardware/) for board identification. They are not manufacturing files or a PCB design release.
+
 The released material does not claim production qualification, safety certification, vendor endorsement, or turnkey operation.
